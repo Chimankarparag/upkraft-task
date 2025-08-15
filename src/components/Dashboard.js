@@ -3,6 +3,7 @@ import ProfileCard from './ProfileCard';
 import UpcomingLessons from './UpcomingLessons';
 import PerformanceCharts from './PerformanceCharts';
 import ReferEarn from './ReferEarn';
+import Feedback from './Feedback';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -25,13 +26,27 @@ const Dashboard = () => {
       </div>
       
       <div className="dashboard-content">
-        <div className="dashboard-main">
-          <ProfileCard />
-          <UpcomingLessons />
+        {/* First Row: Profile Card + Refer and Earn */}
+        <div className="dashboard-row-1">
+          <div className="profile-section">
+            <ProfileCard />
+          </div>
+          <div className="refer-section">
+            <ReferEarn />
+          </div>
         </div>
-        <div className="dashboard-sidebar">
-          <PerformanceCharts />
-          <ReferEarn />
+        
+        {/* Second Row: Upcoming Lessons + Performance Charts + Feedback */}
+        <div className="dashboard-row-2">
+          <div className="lessons-section">
+            <UpcomingLessons />
+          </div>
+          <div className="performance-section">
+            <PerformanceCharts />
+          </div>
+          <div className="feedback-section">
+            <Feedback />
+          </div>
         </div>
       </div>
     </div>

@@ -52,34 +52,76 @@
 }
 
 .dashboard-content {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 30px;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   min-height: calc(100vh - 100px);
 }
 
-.dashboard-main {
-  display: flex;
-  flex-direction: column;
+/* First Row: Profile Card + Refer and Earn */
+.dashboard-row-1 {
+  display: grid;
+  grid-template-columns: 1fr 300px;
   gap: 30px;
+  align-items: start;
 }
 
-.dashboard-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.profile-section {
+  width: 100%;
+}
+
+.refer-section {
+  width: 100%;
+}
+
+/* Second Row: Upcoming Lessons + Performance + Feedback */
+.dashboard-row-2 {
+  display: grid;
+  grid-template-columns: 2fr 300px 250px;
+  gap: 30px;
+  align-items: start;
+  min-height: 400px;
+}
+
+.lessons-section {
+  width: 100%;
+}
+
+.performance-section {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-section {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .dashboard-row-2 {
+    grid-template-columns: 2fr 280px 220px;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 1200px) {
-  .dashboard-content {
+  .dashboard-row-1 {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
-  .dashboard-sidebar {
-    flex-direction: row;
+  .dashboard-row-2 {
+    grid-template-columns: 1fr;
     gap: 20px;
+  }
+  
+  .refer-section {
+    order: 1;
+  }
+  
+  .profile-section {
+    order: 2;
   }
 }
 
@@ -99,7 +141,18 @@
     gap: 15px;
   }
   
-  .dashboard-sidebar {
-    flex-direction: column;
+  .dashboard-row-1 {
+    gap: 15px;
+  }
+  
+  .dashboard-row-2 {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-content {
+    padding: 15px;
+    gap: 15px;
   }
 }
