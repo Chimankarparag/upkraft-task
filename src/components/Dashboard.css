@@ -1,0 +1,214 @@
+.dashboard {
+  flex: 1;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e1e5e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-search {
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #e1e5e9;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #6a5acd;
+}
+
+.dashboard-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: #f0f0f0;
+  color: #6a5acd;
+}
+
+.notification-btn {
+  position: relative;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef5350;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: calc(100vh - 100px);
+}
+
+/* First Row: Profile Card + Refer and Earn */
+.dashboard-row-1 {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  align-items: start;
+}
+
+.profile-section {
+  width: 100%;
+}
+
+.refer-section {
+  width: 100%;
+}
+
+/* Second Row: Upcoming Lessons + Performance + Feedback */
+.dashboard-row-2 {
+  display: grid;
+  grid-template-columns: 2fr 300px 250px;
+  gap: 30px;
+  align-items: start;
+  min-height: 400px;
+}
+
+.lessons-section {
+  width: 100%;
+}
+
+.performance-section {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-section {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .dashboard-row-2 {
+    grid-template-columns: 2fr 280px 220px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard-row-1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .dashboard-row-2 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .refer-section {
+    order: 1;
+  }
+  
+  .profile-section {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .dashboard-search {
+    max-width: none;
+  }
+  
+  .dashboard-content {
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .dashboard-row-1 {
+    gap: 15px;
+  }
+  
+  .dashboard-row-2 {
+    gap: 15px;
+  }
+  
+  .dashboard-user {
+    gap: 15px;
+  }
+  
+  .dashboard-icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-content {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .dashboard-user {
+    gap: 10px;
+  }
+  
+  .user-name {
+    display: none;
+  }
+}
