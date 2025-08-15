@@ -1,4 +1,5 @@
 import React from 'react';
+import { Send, Bell } from 'lucide-react';
 import ProfileCard from './ProfileCard';
 import UpcomingLessons from './UpcomingLessons';
 import PerformanceCharts from './PerformanceCharts';
@@ -18,6 +19,15 @@ const Dashboard = () => {
           />
         </div>
         <div className="dashboard-user">
+          <div className="dashboard-icons">
+            <button className="icon-btn">
+              <Send size={20} />
+            </button>
+            <button className="icon-btn notification-btn">
+              <Bell size={20} />
+              <span className="notification-dot"></span>
+            </button>
+          </div>
           <span className="user-name">Sherry Wolf</span>
           <div className="user-avatar">
             <img src="https://i.pravatar.cc/40?img=47" alt="User" />
