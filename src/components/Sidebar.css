@@ -59,6 +59,18 @@
 .sidebar-footer {
   padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.sidebar-footer .sidebar-nav-item {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.sidebar-footer .sidebar-nav-item:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+  border-left-color: #ff6b6b;
 }
 
 @media (max-width: 768px) {
@@ -106,5 +118,19 @@
     min-width: 80px;
     border-top: none;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0;
+  }
+  
+  .sidebar-footer .sidebar-nav-item {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .sidebar-footer .sidebar-nav-item:hover {
+    border-left: none;
+    border-bottom-color: #ff6b6b;
   }
 }
