@@ -1,0 +1,142 @@
+.refer-earn {
+  background: linear-gradient(135deg, #6a5acd 0%, #8b7bd8 100%);
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(106, 90, 205, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.refer-earn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.refer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.refer-text {
+  flex: 1;
+  text-align: left;
+}
+
+.refer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.refer-description {
+  font-size: 13px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+}
+
+.refer-image {
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.refer-person {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.refer-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.refer-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .refer-earn {
+    padding: 20px;
+  }
+  
+  .refer-content {
+    margin-bottom: 16px;
+  }
+  
+  .refer-title {
+    font-size: 16px;
+  }
+  
+  .refer-description {
+    font-size: 12px;
+  }
+  
+  .refer-person {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .refer-earn {
+    padding: 16px;
+  }
+  
+  .refer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .refer-text {
+    text-align: center;
+  }
+  
+  .refer-image {
+    margin-left: 0;
+  }
+  
+  .refer-person {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .refer-title {
+    font-size: 16px;
+  }
+  
+  .refer-description {
+    font-size: 11px;
+  }
+}
