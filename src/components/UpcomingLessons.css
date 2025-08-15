@@ -1,0 +1,135 @@
+.upcoming-lessons {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e5e9;
+}
+
+.lessons-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lessons-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.view-all-btn {
+  background: none;
+  border: none;
+  color: #6a5acd;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #f0f0ff;
+}
+
+.lessons-table-container {
+  overflow-x: auto;
+}
+
+.lessons-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.lessons-table th {
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 2px solid #e1e5e9;
+  white-space: nowrap;
+}
+
+.lesson-row {
+  transition: background-color 0.2s ease;
+}
+
+.lesson-row:hover {
+  background-color: #f8f9fa;
+}
+
+.lessons-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.lesson-date {
+  font-weight: 500;
+  color: #333;
+  white-space: nowrap;
+}
+
+.lesson-time {
+  color: #666;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.lesson-course {
+  color: #333;
+  font-weight: 500;
+}
+
+.lesson-student {
+  color: #666;
+}
+
+.lessons-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .upcoming-lessons {
+    padding: 20px;
+  }
+  
+  .lessons-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .lessons-table {
+    font-size: 13px;
+  }
+  
+  .lessons-table th,
+  .lessons-table td {
+    padding: 10px 8px;
+  }
+  
+  .lesson-course,
+  .lesson-student {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .lessons-table th:nth-child(3),
+  .lessons-table td:nth-child(3) {
+    display: none;
+  }
+  
+  .lesson-student {
+    max-width: 120px;
+  }
+}
