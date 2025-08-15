@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/upkraft-task/static/css/main.88b9c1ff.css",
+    "main.js": "/upkraft-task/static/js/main.02e2d4ea.js",
+    "index.html": "/upkraft-task/index.html",
+    "main.88b9c1ff.css.map": "/upkraft-task/static/css/main.88b9c1ff.css.map",
+    "main.02e2d4ea.js.map": "/upkraft-task/static/js/main.02e2d4ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88b9c1ff.css",
+    "static/js/main.02e2d4ea.js"
+  ]
+}
