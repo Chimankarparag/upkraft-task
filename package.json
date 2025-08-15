@@ -1,0 +1,17 @@
+{
+  "name": "upkraft-task",
+  "version": "1.0.0",
+  "description": "Upkraft task project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "build": "echo 'No build step defined yet'",
+    "test": "echo 'No tests defined yet'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
