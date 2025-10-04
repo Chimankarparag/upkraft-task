@@ -1,4 +1,3 @@
-import React from 'react';
 import './PerformanceCharts.css';
 
 const PerformanceCharts = () => {
@@ -18,7 +17,7 @@ const PerformanceCharts = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="chart-card student-performance">
           <h4 className="chart-title">Overall Student Performance</h4>
           <div className="chart-content">

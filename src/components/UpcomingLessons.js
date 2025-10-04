@@ -1,4 +1,3 @@
-import React from 'react';
 import './UpcomingLessons.css';
 
 const UpcomingLessons = () => {
@@ -59,7 +58,7 @@ const UpcomingLessons = () => {
         <h3 className="lessons-title">Upcoming Lessons</h3>
         <button className="view-all-btn">View All</button>
       </div>
-      
+
       <div className="lessons-table-container">
         <table className="lessons-table">
           <thead>
