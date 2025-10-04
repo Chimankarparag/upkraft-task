@@ -1,4 +1,3 @@
-import React from 'react';
 import { Users, BookOpen, Award } from 'lucide-react';
 import './ProfileCard.css';
 
@@ -40,7 +39,7 @@ const ProfileCard = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="stats-grid-section">
           <div className="stats-grid">
             {stats.map((stat, index) => (

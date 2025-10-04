@@ -1,4 +1,3 @@
-import React from 'react';
 import { Send, Bell } from 'lucide-react';
 import ProfileCard from './ProfileCard';
 import UpcomingLessons from './UpcomingLessons';
@@ -34,7 +33,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="dashboard-content">
         {/* First Row: Profile Card + Refer and Earn */}
         <div className="dashboard-row-1">
@@ -45,7 +44,7 @@ const Dashboard = () => {
             <ReferEarn />
           </div>
         </div>
-        
+
         {/* Second Row: Upcoming Lessons + Performance Charts + Feedback */}
         <div className="dashboard-row-2">
           <div className="lessons-section">

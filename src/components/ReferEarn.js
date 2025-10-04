@@ -1,4 +1,3 @@
-import React from 'react';
 import './ReferEarn.css';
 
 const ReferEarn = () => {
@@ -12,9 +11,9 @@ const ReferEarn = () => {
           </p>
         </div>
         <div className="refer-image">
-          <img 
-            src="https://i.pravatar.cc/120?img=48" 
-            alt="Happy person" 
+          <img
+            src="https://i.pravatar.cc/120?img=48"
+            alt="Happy person"
             className="refer-person"
           />
         </div>

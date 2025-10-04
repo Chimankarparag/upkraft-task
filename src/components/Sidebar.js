@@ -1,4 +1,3 @@
-import React from 'react';
 import { Home, Users, BookOpen, Calendar, FileText, Music, Play, CreditCard, UserPlus, Settings, LogOut } from 'lucide-react';
 import './Sidebar.css';
 
@@ -21,7 +20,7 @@ const Sidebar = () => {
       <div className="sidebar-header">
         <h2 className="sidebar-logo">UPKRAFT</h2>
       </div>
-      
+
       <nav className="sidebar-nav">
         {menuItems.map((item, index) => (
           <a
@@ -34,7 +33,7 @@ const Sidebar = () => {
           </a>
         ))}
       </nav>
-      
+
       <div className="sidebar-footer">
         <a href="#" className="sidebar-nav-item">
           <LogOut className="sidebar-nav-icon" size={20} />
